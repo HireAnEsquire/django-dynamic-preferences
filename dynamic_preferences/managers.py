@@ -4,7 +4,7 @@ from .settings import preferences_settings
 from .exceptions import CachedValueNotFound, DoesNotExist
 
 
-class PreferencesManager(collections.Mapping):
+class PreferencesManager(collections.abc.Mapping):
 
     """Handle retrieving / caching of preferences"""
 
